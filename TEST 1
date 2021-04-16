@@ -1,5 +1,6 @@
-Nous voulons faire une mise à jour de l'application. Il faut une liste des différents types d'arbres et dont la description est longue d'au moins 120 charactères ?
-/!\ PEUT ETRE QU ON PEUT RAJ LA DEMANDE " QUEL TYPE D'ARBRE EST LE PLUS PLANTE ET CLASSE EN ORDRE CROISSANT"
+Nous voulons faire une mise à jour de l'application. Nous aimerions refaire une commande de graines mais nous avons besoin de savoir le type de graines. 
+Il faut une liste des différents types d'arbres et dont la description est longue d'au moins 50 charactères. 
+/!\ PEUT ETRE QU ON PEUT RAJ LA DEMANDE " QUEL TYPE D'ARBRE EST LE PLUS PLANTé ET après CLASSer EN ORDRE CROISSANT"
 
 SELECT COUNT (planted_trees_id)
 FROM Planted_trees
@@ -10,10 +11,7 @@ Quelle est la durée moyenne d'une conversation ?
 SELECT AVG(JULIANDAY(updated_at) - JULIANDAY(created_at))
 FROM conversation;
 
-Qui sont les "meilleurs" utilisateurs (les plus actifs), combien de messages ont ils envoyé  et combien d'arbres ont été planté ?
-
-Nous aimerions refaire une commande de graines mais nous avons besoin de savoir le type de graines. 
-Combien de types d'arbres différents ont été planté et quelles sont les descriptions qui y sont reliées ? 
+Qui sont les "meilleurs" utilisateurs (les plus actifs), combien de messages ont ils envoyé et combien d'arbres ont été planté grâce à eux ?
 
 De combien, en pourcentage, les messages envoyés ont augmenté ou baissé depuis la création/le lancement de l'application (created_date of the app) ?
 
