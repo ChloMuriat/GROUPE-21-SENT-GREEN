@@ -1,4 +1,4 @@
-Nous voulons faire une mise à jour de l'application. Nous aimerions refaire une commande de graines mais nous avons besoin de savoir le type de graines. 
+1) Nous aimerions refaire une commande de graines mais nous avons besoin de savoir le type de graines. 
 Il faut une liste des différents types d'arbres et dont la description est longue d'au moins 50 charactères. 
 /!\ PEUT ETRE QU ON PEUT RAJ LA DEMANDE " QUEL TYPE D'ARBRE EST LE PLUS PLANTé ET après CLASSer EN ORDRE CROISSANT"
 
@@ -6,16 +6,16 @@ SELECT COUNT (planted_trees_id)
 FROM Planted_trees
 WHERE NGO IN ("Weforest") AND country IN ("Belgique") AND LENGTH(tree_description) >= 50;
 
-Quelle est la durée moyenne d'une conversation ?
+2) Nous aimerions faire une mise à jour concernant la durée des messages restant sur l'application. Pour cela nous avons besoin de savoir la durée moyenne d'une conversation.
 
 SELECT AVG(JULIANDAY(updated_at) - JULIANDAY(created_at))
 FROM conversation;
 
-Qui sont les "meilleurs" utilisateurs (les plus actifs), combien de messages ont ils envoyé et combien d'arbres ont été planté grâce à eux ?
+3) Qui sont les "meilleurs" utilisateurs (les plus actifs), combien de messages ont ils envoyé et combien d'arbres ont été planté grâce à eux ?
 
-De combien, en pourcentage, les messages envoyés ont augmenté ou baissé depuis la création/le lancement de l'application (created_date of the app) ?
+4) De combien, en pourcentage, les messages envoyés ont augmenté ou baissé depuis la création/le lancement de l'application (created_date of the app) ?
 
-On aimerait déterminer le nombre d'utilisateurs depuis le lancement de l'application et le nombre moyen de messages envoyés par utilisateur.
+5) On aimerait déterminer le nombre d'utilisateurs depuis le lancement de l'application et le nombre moyen de messages envoyés par utilisateur.
 
 SELECT UserId, User_firstname, User_lastname
 COUNT(UserId) AS Total_Users, 
