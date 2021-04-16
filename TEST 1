@@ -1,6 +1,19 @@
+Nous voulons faire une mise à jour de l'application. Il faut une liste des différents types d'arbres et dont la description est longue d'au moins 120 charactères ?
+/!\ PEUT ETRE QU ON PEUT RAJ LA DEMANDE " QUEL TYPE D'ARBRE EST LE PLUS PLANTE ET CLASSE EN ORDRE CROISSANT"
+
+SELECT COUNT (planted_trees_id)
+FROM Planted_trees
+WHERE NGO IN ("Weforest") AND country IN ("Belgique") AND LENGTH(tree_description) >= 50;
+
+Quelle est la durée moyenne d'une conversation ?
+
+SELECT AVG(JULIANDAY(updated_at) - JULIANDAY(created_at))
+FROM conversation;
+
 Qui sont les "meilleurs" utilisateurs (les plus actifs), combien de messages ont ils envoyé  et combien d'arbres ont été planté ?
 
-Combien de types d'arbres différents ont été planté et quelles sont les descriptions qui y sont reliées ? (LEFT JOIN)
+Nous aimerions refaire une commande de graines mais nous avons besoin de savoir le type de graines. 
+Combien de types d'arbres différents ont été planté et quelles sont les descriptions qui y sont reliées ? 
 
 De combien, en pourcentage, les messages envoyés ont augmenté ou baissé depuis la création/le lancement de l'application (created_date of the app) ?
 
@@ -14,16 +27,8 @@ WHERE STRFTIME("%Y",User_created_at) IN ("30/03/2021") AND User_MessageQuantity 
 GROUP BY UserId
 ORDER BY User_lastname ASC
 
-Quelle est la durée moyenne d'une conversation ?
 
-SELECT AVG(JULIANDAY(updated_at) - JULIANDAY(created_at))
-FROM conversation;
 
-Nous voulons faire une mise à jour de l'application. Il faut une liste des différents types d'arbres et dont la description est longue d'au moins 120 charactères ?
-/!\ PEUT ETRE QU ON PEUT RAJ LA DEMANDE " QUEL TYPE D'ARBRE EST LE PLUS PLANTE ET CLASSE EN ORDRE CROISSANT"
 
-SELECT COUNT (planted_trees_id)
-FROM Planted_trees
-WHERE NGO IN ("Weforest") AND country IN ("Belgique") AND LENGTH(tree_description) >= 50;
 
 
