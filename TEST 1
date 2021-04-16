@@ -1,0 +1,3 @@
+Qui sont les "meilleurs" utilisateurs (les plus actifs), combien de messages ont ils envoyé  et combien d'arbres ont été planté ?
+Combien de types d'arbres différents ont été planté et quelles sont les descriptions qui y sont reliées ? (LEFT JOIN)
+De combien, en pourcentage, les messages envoyés ont augmenté ou baissé depuis la création/le lancement de l'application (created_date of the app) ?
